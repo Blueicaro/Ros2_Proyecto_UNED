@@ -1,0 +1,10 @@
+# orden de arranque (Goal)
+bool run
+---
+# Result. Resultado en hexadecimal
+string valor
+---
+# Feedback
+int64 current
+
+
