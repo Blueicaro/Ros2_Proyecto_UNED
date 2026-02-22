@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="ejercicio_py_1" exec="serverinthex"/>
+    <node pkg="ejercicio_py_1" exec="clientinthex"/>
+    <node pkg="ejercicio_py_1" exec="actionnode"/>
+</launch>

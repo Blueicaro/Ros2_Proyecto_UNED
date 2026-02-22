@@ -1,0 +1,7 @@
+# valor a convertir en hexadecimal
+int64 valor
+---
+# indica si tuvo exito la conversión
+bool exito
+# cadena que representa el número en hexadecimal
+string sthex
