@@ -1,15 +1,13 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>ejercicio_py_1</name>
+  <name>ejercicio_py_2</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="jorge.turiel@gmail.com">jorge</maintainer>
-  <license>TODO: GNU</license>
+  <maintainer email="jorge@todo.todo">jorge</maintainer>
+  <license>TODO: GNU </license>
 
-  <depend>rclpy</depend>
-  <depend>my_interfaces</depend>
-  <depend>examples_interfaces.msg </depend>
+  <depend>rclcpy</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
