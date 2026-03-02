@@ -24,7 +24,9 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            "publish_tf_node=ejercicio_py_2.publish_tf:main"
+            "publish_tf_node=ejercicio_py_2.publish_tf:main",
+            "publish_tf_node2=ejercicio_py_2.publish_tf_2:main",
+            "publish_distance=ejercicio_py_2.publish_distance:main"
         ],
     },
 )
