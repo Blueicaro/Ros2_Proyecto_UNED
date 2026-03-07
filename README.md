@@ -2,6 +2,16 @@
 
 Este repositorio contiene mi proyecto para el curso de introducción a ROS impartido por la [UNED](https://www.uned.es/universidad/inicio), en el año 2026.
 
+# Contenido
+
+
+- [Ros2\_Proyecto\_UNED](#ros2_proyecto_uned)
+- [Contenido](#contenido)
+  - [Ejercicio 1](#ejercicio-1)
+  - [Ejercicio 2](#ejercicio-2)
+  - [Ejercicio 3](#ejercicio-3)
+
+
 
 ## Ejercicio 1
 
@@ -66,7 +76,30 @@ Por último en otro terminar ejecutar:
                 ros2 topic echo /distancia
 
 
+## Ejercicio 3
 
+Ejercicio práctico final — Construye tu primer robot completo 
+
+Objetivo:
+Diseñar un robot móvil diferencial sencillo en URDF/XACRO y visualizarlo correctamente en RVIZ2.
+
+Se crea el paquete robot_ejercicio3. En este paquete se crea un directorio con el nombre URDF, donde se alojan los archivos siguientes:
+
+        * robot_ejercio3.xacro. Este es el archivo principal que debe llamar
+        * robot_common.xacro. Este archivo contiene definiciones de colores y macros de para el cálculo de las inercias
+        * robot_geometry.xacro. Este archivo contiene la geometria del robot. La definición está parametrizada con variables
+
+Para visualiar el robot en rviz2 ejecutar:
+
+        ros2 launch urdf_tutorial display.launch.py model:=/home/<user>/curso_ros2_ws/src/Ros2_Proyecto_UNED/robot_ejercicio3/urdf/robot_ejercicio3.xacro 
+
+Cuando esté funcionando se puede lanzarar el siguiente comando:
+
+        ros2 run tf2_tools view_frames
+
+                
+
+                
 
        
 

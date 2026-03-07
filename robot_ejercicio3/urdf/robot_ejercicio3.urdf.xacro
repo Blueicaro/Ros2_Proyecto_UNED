@@ -1,4 +1,0 @@
-<robot name = "robot_ejercicio3" xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <xacro:propertiy name="base_radius" value="0.12"/>
-    <xacro:propertiy name ="base_height" value="0.6"/>
-</robot>
