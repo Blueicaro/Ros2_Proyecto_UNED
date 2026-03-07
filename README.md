@@ -89,7 +89,7 @@ Se crea el paquete robot_ejercicio3. En este paquete se crea un directorio con e
         * robot_common.xacro. Este archivo contiene definiciones de colores y macros de para el cálculo de las inercias
         * robot_geometry.xacro. Este archivo contiene la geometria del robot. La definición está parametrizada con variables
 
-Para visualiar el robot en rviz2 ejecutar:
+Para visualizar el robot en rviz2 ejecutar:
 
         ros2 launch urdf_tutorial display.launch.py model:=/home/<user>/curso_ros2_ws/src/Ros2_Proyecto_UNED/robot_ejercicio3/urdf/robot_ejercicio3.xacro 
 
