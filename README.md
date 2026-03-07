@@ -93,7 +93,7 @@ Para visualiar el robot en rviz2 ejecutar:
 
         ros2 launch urdf_tutorial display.launch.py model:=/home/<user>/curso_ros2_ws/src/Ros2_Proyecto_UNED/robot_ejercicio3/urdf/robot_ejercicio3.xacro 
 
-Cuando esté funcionando se puede lanzarar el siguiente comando:
+Cuando esté funcionando se puede lanzarar el siguiente comando para generar un archivo PDF y comprobar que todas las relaciones de los links son correctas:
 
         ros2 run tf2_tools view_frames
 
