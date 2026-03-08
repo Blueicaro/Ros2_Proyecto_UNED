@@ -48,15 +48,33 @@
         </link>
     </xacro:macro>
 
+    <xacro:macro name="wheel_transmission" params="prefix">
+        <!-- Transmisión de las ruedas-->
+        <transmission name="${prefix}_wheel_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="base_${prefix}_wheel_joint">
+                <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="wheel_motor_${prefix}">
+                <mechanicalReduction>5.0</mechanicalReduction>
+                <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            </actuator>
+        </transmission>
+
+    </xacro:macro>
+
     <xacro:wheel_link prefix="left" />
     <xacro:wheel_link prefix="right" />
+    <xacro:wheel_transmission prefix="left" />
+    <xacro:wheel_transmission prefix="right" />
+
 
     <link name="lidar_link">
         <visual>
             <geometry>
                 <cylinder radius="${lidar_radius}" length="${lidar_length}" />
             </geometry>
-            <material name="white"/>
+            <material name="white" />
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
         </visual>
     </link>
@@ -99,6 +117,7 @@
         <origin xyz="${-wheel_offset} ${-(base_radius+(wheel_length/2.0))} 0.0" rpy="1.57 0.0 0.0" />
         <axis xyz="0.0 0.0 1.0" />
     </joint>
+
 
     <joint name="base_caster_ball_joint" type="fixed">
         <parent link="base_link" />
