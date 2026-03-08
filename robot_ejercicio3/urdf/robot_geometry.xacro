@@ -48,8 +48,8 @@
         </link>
     </xacro:macro>
 
-    <xacro:macro name="wheel_transmission" params="prefix">
-        <!-- Transmisión de las ruedas-->
+      <!-- Transmisión de las ruedas-->
+    <xacro:macro name="wheel_transmission" params="prefix">      
         <transmission name="${prefix}_wheel_trans">
             <type>transmission_interface/SimpleTransmission</type>
             <joint name="base_${prefix}_wheel_joint">
@@ -60,7 +60,6 @@
                 <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
             </actuator>
         </transmission>
-
     </xacro:macro>
 
     <xacro:wheel_link prefix="left" />
