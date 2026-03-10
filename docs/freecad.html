@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño FreeCAD - Proyecto ROS</title>
+     <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Diseño Mecánico en FreeCAD</h1>
+        <nav>
+            <a href="proyecto.html">Proyecto UNED</a>    
+            <a href="index.html" style="color: white; margin-right: 15px;">← Volver al Inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="proceso">
+            <h2>Proceso de Modelado</h2>
+            <p>El chasis del robot fue diseñado utilizando el banco de trabajo <strong>Part Design</strong>. Se priorizó la modularidad para facilitar el montaje de los sensores LiDAR y la cámara.</p>
+            
+            <div class="placeholder-img">
+                
+            </div>
+        </section>
+
+        <section id="especificaciones">
+            <h2>Dimensiones y Componentes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pieza</th>
+                        <th>Material/Proceso</th>
+                        <th>Función</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chasis Principal</td>
+                        <td>Impresión 3D (PLA)</td>
+                        <td>Soporte de electrónica</td>
+                    </tr>
+                    <tr>
+                        <td>Soporte Motor</td>
+                        <td>Aluminio / Corte CNC</td>
+                        <td>Anclaje de motores DC</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="exportacion">
+            <h2>De FreeCAD a ROS</h2>
+            <p>Para integrar el modelo en Gazebo/Rviz, utilicé el plugin <strong>FreeCAD-to-URDF</strong>. Es vital definir correctamente los <em>links</em> y <em>joints</em> (uniones) para que la cinemática funcione en ROS.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Documentación Técnica - UNED 2026</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* Configuración General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+header {
+    background: #2c3e50; /* Azul oscuro profesional */
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2980b9;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Estilo para el código */
+pre {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* Contenedor de imágenes */
+.placeholder-img {
+    background: #e2e2e2;
+    border: 2px dashed #bbb;
+    padding: 40px;
+    text-align: center;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Estilos para la navegación simple */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background: white;
+    color: #2c3e50;
+}
+
+/* Estilos para la tabla de componentes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #2980b9;
+}
+/* General y Header */
+body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; margin: 0; background: #f4f4f9; color: #333; }
+header { background: #2c3e50; color: white; padding: 30px 0; text-align: center; }
+
+/* Menú de Navegación */
+nav { margin-top: 20px; }
+nav a { color: #bdc3c7; text-decoration: none; padding: 10px 20px; margin: 0 5px; border: 1px solid #7f8c8d; border-radius: 5px; transition: 0.3s; }
+nav a:hover { color: white; background: #34495e; }
+nav a.active { background: #3498db; color: white; border-color: #3498db; }
+
+/* Contenedores */
+main { max-width: 800px; margin: 20px auto; padding: 0 20px; }
+section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+h2 { color: #2980b9; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+
+/* Código y placeholders */
+pre { background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow-x: auto; }
+.placeholder-img { background: #e2e2e2; border: 2px dashed #bbb; padding: 40px; text-align: center; }
+footer { text-align: center; padding: 20px; color: #666; font-size: 0.9rem; }
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}

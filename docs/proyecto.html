@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto ROS - UNED</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mi Proyecto ROS</h1>
+        <p>Curso de Robótica - UNED 2026</p>
+        <nav>
+            <a href="index.html">Inicio (ROS)</a>
+            <a href="freecad.html">Diseño FreeCAD</a>
+            <a href="index.html" style="color: white; margin-right: 15px;">← Volver al Inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="descripcion">
+            <h2>Descripción del Proyecto</h2>
+            <p>Este proyecto implementa un robot tipo "roomba" <strong>ROS 2</strong>. El objetivo
+                es que el robot reciba comandos y registre colisiones.</p>
+            <p>El proyecto está en construcción. Según avance se irá acutalizando la documentación. El plazo de
+                finalización es en Mayo de 2026 </p>
+        </section>
+
+        <section id="arquitectura">
+            <h2>Arquitectura de Nodos</h2>
+            <p>Aquí puedes ver cómo se comunican los nodos de mi sistema a través de tópicos (rqt_graph):</p>
+            <div class="placeholder-img">
+                [Imagen: Captura de pantalla de rqt_graph]
+            </div>
+        </section>
+
+        <section id="codigo">
+            <h2>Fragmento de Código</h2>
+            <p>Ejemplo de un suscriptor básico en Python para recibir datos de los sensores:</p>
+            <pre><code>
+def listener_callback(self, msg):
+    self.get_logger().info('Escuchando datos del sensor: "%s"' % msg.data)
+            </code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creado para Introducción a la robótica con ROS 2. Formación permanente | UNED 2026</p>
+    </footer>
+</body>
+
+</html>
