@@ -5,7 +5,7 @@ Este repositorio contiene mi proyecto para el curso de introducción a ROS impar
 # Contenido
 
 - [Contenido](#contenido)
-  - [Documetación proyecto final](https://blueicaro.github.io/Ros2_Proyecto_UNED/proyecto.html)  
+  - [Documetación proyecto final](https://blueicaro.github.io/Ros2_Proyecto_UNED/index.html)  
   - [Ejercicio 1](#ejercicio-1)
   - [Ejercicio 2](#ejercicio-2)
   - [Ejercicio 3](#ejercicio-3)
