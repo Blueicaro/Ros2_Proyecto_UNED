@@ -4,8 +4,18 @@
     escalarlo-->
     <xacro:property name="base_height" value="0.0096" />
     <xacro:property name="base_width" value="0.2" />
+    <xacro:property name="base_mass" value="0.5" />
+    
     <xacro:property name="wheel_radius" value="0.02" />
     <xacro:property name="wheel_length" value="0.015" />
+    <xacro:property name="wheel_mass" value="0.1" />
+
+    <xacro:property name="caster_radius" value="0.03" />
+    <xacro:property name="caster_mass" value="0.005" />
+
+    <xacro:property name="lidar_radius" value="0.05" />
+    <xacro:property name="lidar_length" value="0.02" /> 
+    <xacro:property name="lidar_mass" value="0.005" />
 
     <link name="base_link">
         <visual>
@@ -17,11 +27,12 @@
             <material name="white" />
         </visual>
         <collision>
+            <origin xyz="0 0 0.05" rpy="0 0 0" />
             <geometry>
-                <cylinder radius="${base_width/2}" length="${base_height}" />
+                <cylinder radius="${base_width}" length="${base_height*10}" />
             </geometry>
         </collision>
-        <xacro:cylinder_inertial m="0.5" r="${base_width/2}" l="${base_height}" o_xyz="0 0 0"
+        <xacro:cylinder_inertial m="${base_mass}" r="${base_width/2}" l="${base_height}" o_xyz="0 0 0"
             o_rpy="0 0 0" />
     </link>
 
@@ -45,11 +56,12 @@
                 <material name="black" />
             </visual>
             <collision>
+                <origin xyz="0 0 0" rpy="1.570 0 0" />
                 <geometry>
-                    <cylinder radius="${wheel_radius}" length="${wheel_length}" />
+                    <cylinder radius="${wheel_radius*2}" length="${wheel_length}" />
                 </geometry>
             </collision>
-            <xacro:cylinder_inertial m="0.1" r="${wheel_radius}" l="${wheel_length}" o_xyz="0 0 0"
+            <xacro:cylinder_inertial m="${wheel_mass}" r="${wheel_radius}" l="${wheel_length}" o_xyz="0 0 0"
                 o_rpy="0 0 0" />
         </link>
     </xacro:macro>
@@ -68,9 +80,9 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <sphere radius="0.06" />
+                <sphere radius="${caster_radius}" />
             </geometry>
-            <xacro:sphere_inertial m="0.01" r="0.06" o_xyz="0 0 0" o_rpy="0 0 0" />
+            <xacro:sphere_inertial m="${caster_mass}" r="${caster_radius*2}" o_xyz="0 0 0" o_rpy="0 0 0" />
         </collision>
     </link>
 
@@ -86,9 +98,9 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <cylinder radius="0.05" length="0.02" />
+                <cylinder radius="${lidar_radius}" length="${lidar_length}" />
             </geometry>
-            <xacro:cylinder_inertial m="0.05" r="0.05" l="0.02" o_xyz="0 0 0" o_rpy="0 0 0" />
+            <xacro:cylinder_inertial m="${lidar_mass}" r="${lidar_radius}" l="${lidar_length}" o_xyz="0 0 0" o_rpy="0 0 0" />
         </collision>
     </link>
 
