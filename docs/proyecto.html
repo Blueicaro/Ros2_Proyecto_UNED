@@ -41,9 +41,24 @@
             <h2>Fragmento de Código</h2>
             <p>Ejemplo de un suscriptor básico en Python para recibir datos de los sensores:</p>
             <pre><code>
-def listener_callback(self, msg):
-    self.get_logger().info('Escuchando datos del sensor: "%s"' % msg.data)
+            def listener_callback(self, msg):
+            self.get_logger().info('Escuchando datos del sensor: "%s"' % msg.data)
             </code></pre>
+        </section>
+        <section id="ejecutar">
+            <h2>Ejecución y Resultados</h2>
+            <p>Para ejecutar el proyecto, ejecuta el siguiente comando en la terminal:</p>
+            <pre><code>ros2 launch robot_bringup_gz launch.xml</code></pre>
+            <p>Resultados esperados:</p>
+            <ul>
+                <li>El robot se mueve hacia adelante al recibir el comando de avance.</li>
+                <li>El robot se detiene al recibir el comando de detención.</li>
+                <li>El robot gira a la izquierda o derecha al recibir los comandos correspondientes.</li>
+                <li>El robot retrocede al recibir el comando de retroceso.</li>
+                <li>Los datos de los sensores se registran correctamente en la consola.</li>
+            </ul>
+            <p>Para lanzar la aplicación en python que usar QT para crear una interfaz gráfica:</p>
+            <pre><code>os2 run gui_py gui_py_node </code></pre>
         </section>
     </main>
 
