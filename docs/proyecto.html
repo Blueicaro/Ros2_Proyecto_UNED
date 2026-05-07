@@ -32,8 +32,9 @@
         <section id="arquitectura">
             <h2>Arquitectura de Nodos</h2>
             <p>Aquí puedes ver cómo se comunican los nodos de mi sistema a través de tópicos (rqt_graph):</p>
-            <div class="placeholder-img">
-                [Imagen: Captura de pantalla de rqt_graph]
+            <div class="imagenes/rqt_graph.png" style="text-align: center;">    
+                <img src="../imagenes/rqt_graph.png" alt="Arquitectura de Nodos en rqt_graph" style="width: 100%; max-width: 600px;">
+                <p class="caption">Figura 1: Arquitectura de nodos visualizada con rqt_graph.</p>
             </div>
         </section>
 
@@ -58,7 +59,11 @@
                 <li>Los datos de los sensores se registran correctamente en la consola.</li>
             </ul>
             <p>Para lanzar la aplicación en python que usar QT para crear una interfaz gráfica:</p>
-            <pre><code>os2 run gui_py gui_py_node </code></pre>
+            <pre><code>ros2 run gui_py gui_py_node </code></pre>
+            <p>Para visualizar el robot en rviz:</p>    
+            <pre><code>ros2 launch urdf_tutorial display.launch.py model:=/home/jorge/curso_ros2_ws/src/Ros2_Proyecto_UNED/robot_description/urdf/robot_final.urdf.xacro /code></pre>
+                <img src="../imagenes/rviz.png" alt="Visualización en RViz" style="width: 100%; max-width: 600px;">
+                <p class="caption">Figura 2: Visualización del robot en RViz.</p>  
         </section>
     </main>
 

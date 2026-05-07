@@ -20,40 +20,18 @@
             <h2>Proceso de Modelado</h2>
             <p>El chasis del robot fue diseñado utilizando el banco de trabajo <strong>Part Design</strong>. Se priorizó la modularidad para facilitar el montaje de los sensores LiDAR y la cámara.</p>
             
-            <div class="placeholder-img">
-                
+            <div class="../imagenes/chasis.png">
+                <img src="../imagenes/chasis.png" alt="Diseño del Chasis en FreeCAD" style="width: 100%; max-width: 600px;">
+                <p class="caption">Figura 1: Diseño del chasis en FreeCAD.</p>                
             </div>
         </section>
 
-        <section id="especificaciones">
-            <h2>Dimensiones y Componentes</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Pieza</th>
-                        <th>Material/Proceso</th>
-                        <th>Función</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Chasis Principal</td>
-                        <td>Impresión 3D (PLA)</td>
-                        <td>Soporte de electrónica</td>
-                    </tr>
-                    <tr>
-                        <td>Soporte Motor</td>
-                        <td>Aluminio / Corte CNC</td>
-                        <td>Anclaje de motores DC</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        
 
         <section id="exportacion">
             <h2>De FreeCAD a ROS</h2>
-            <p>Para integrar el modelo en Gazebo/Rviz, utilicé el plugin <strong>FreeCAD-to-URDF</strong>. Es vital definir correctamente los <em>links</em> y <em>joints</em> (uniones) para que la cinemática funcione en ROS.</p>
-        </section>
+            <p>Para integrar el diseño en ROS, se exportaron los modelos 3D en formato STL. 
+                Estos archivos se utilizaron para simular el robot en Gazebo. El archivo URDF se generó a partir de estos modelos para definir la estructura del robot en ROS.</p>
     </main>
 
     <footer>
